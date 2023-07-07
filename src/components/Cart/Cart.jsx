@@ -9,7 +9,7 @@ const Cart = (props) => {
         price: 12.99
     }];
 
-   const items = <ul className={classes['cart-items']}>{cartItems.map(item => <li>{item.name}</li>)}</ul>
+   const items = <ul className={classes['cart-items']}>{cartItems.map(item => <li key={item.id} >{item.name}</li>)}</ul>
 
   return (
     <Modal>
